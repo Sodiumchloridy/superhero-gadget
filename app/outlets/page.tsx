@@ -4,7 +4,7 @@ export default function Outlets(){
     return(
         <div>
             <h1>Outlets</h1>
-            <div className={styles.outlets}>
+            <div className={styles.grid}>
                 <div className={styles.outlet}>
                     <h2>C180 Branch</h2>
                     <iframe 
