@@ -38,7 +38,7 @@ export default function RootLayout({
       menuBtn.classList.toggle('open')
     })
 
-    //End of useEffect
+    //End of useEffect()
   }, []);
 
 
@@ -70,9 +70,7 @@ export default function RootLayout({
             </li>
           </ul>
         </div>
-        <main className='main'>
           {children}
-        </main>
         <footer className="footer">
           <p>Extra Plus Digital &#40;002626260-H&#41; Copyright &copy; {new Date().getFullYear()}&nbsp; All Rights Reserved.</p>
         </footer>
