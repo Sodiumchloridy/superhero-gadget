@@ -11,7 +11,7 @@ export default function About(){
             </p>
             <p>
                 Our team of experts are always on the lookout for the newest and most innovative 
-                products in the industry, so you can be sure you're getting the best of the best 
+                products in the industry, so you can be sure youre getting the best of the best 
                 when you shop with us. We are committed to providing our customers with excellent 
                 service and support, and we strive to make your shopping experience as seamless 
                 and enjoyable as possible.
