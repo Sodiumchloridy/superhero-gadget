@@ -41,19 +41,18 @@ export default function ImageSlider() {
   
     // Handle button clicks
     btnLeft?.addEventListener('click', () => {
-      prevSlide();
-      clearInterval(slideInterval);
-      startSlideShow();
+      if (!slideInterval) {prevSlide(); return}
+      else {clearInterval(slideInterval); prevSlide(); startSlideShow();}
     });
   
     btnRight?.addEventListener('click', () => {
-      nextSlide();
-      clearInterval(slideInterval);
-      startSlideShow();
+      if (!slideInterval) {nextSlide(); return}
+      else {clearInterval(slideInterval); nextSlide(); startSlideShow();}
     });
   
     // Autoplay slides
     const startSlideShow = () => {
+      if (slideInterval) return;
       slideInterval = setInterval(() => {
         nextSlide();
       }, 5000);
@@ -63,19 +62,16 @@ export default function ImageSlider() {
   
     const sliderContainer = document.querySelector('.img-slider');
     sliderContainer?.addEventListener('mouseover', (event) => {
-      const target = event.target as HTMLElement;
-      const tagNames = ['IMG', 'SVG', 'PATH', 'DIV'];
-      if (tagNames.includes(target.tagName)) {
         // Pause the slide show
+        if (!slideInterval) return;
         clearInterval(slideInterval);
-      }
     });
-
+    
     sliderContainer?.addEventListener('mouseout', (event) => {
       // Start the slide show
       const target = event.target as HTMLElement;
-      const tagNames = ['IMG', 'SVG', 'PATH', 'DIV'];
-      if (tagNames.includes(target.tagName)) {
+      if (target.tagName === 'IMG') {
+        if (slideInterval) return;
         startSlideShow();
       }
     });
