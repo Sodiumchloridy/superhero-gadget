@@ -1,14 +1,14 @@
 export default function Membership(){
     return(
-        <section className="membership-benefits">
-            <h1>Superhero Gadget Membership Programme</h1>
-            <h2>Membership Benefits</h2>
+        <main className="membership-benefits">
+            <h2>Superhero Gadget Membership Programme</h2>
+            <h3>Membership Benefits</h3>
             <p>Join our membership program today to receive exclusive benefits:</p>
             <ul>
-                <li>Collect points for every purchase and redeem them for discounts on your next purchase</li>
-                <li>Be the first to know about our major promotions and discounts</li>
+                <li>Accumulate points every time you make a purchase.</li>
+                <li>Stay ahead of the game by being the first to know about our major promotions and discounts.</li>
+                <li>Receive special birthday freebies that are only available to members.</li>
             </ul>
-            <button className="membership-join-btn">Join Now</button>
-    </section>
+        </main>
     )
 }
