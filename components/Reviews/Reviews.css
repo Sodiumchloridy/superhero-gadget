@@ -6,24 +6,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.reviews-container {
-    width: max-content;
+.grid-container {
+    width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 500px;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill,  minmax(500px, 1fr));
     grid-gap: 10px;
+}
+
+.grid-item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 
 iframe {
     border: none;
     border-radius: 10px;
     overflow: hidden;
-    width: 500px;
-    height: 206px;
+    width: 100%;
+    height: fit-content;
+    resize: both;
 }
+
 .quote {
     width: 40px;
     height: 40px;
@@ -34,4 +43,14 @@ iframe {
 
 .quote path {
     fill: #fff;
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        padding: 0px 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill,  minmax(300px, 1fr));
+    }
 }

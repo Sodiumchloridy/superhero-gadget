@@ -7,7 +7,7 @@ export default function Reviews() {
     function handleIframeError() {
       setHasError(true);
     }
-  
+
     return (
       <div className="reviews">
         <div className="title-wrapper">
@@ -16,22 +16,29 @@ export default function Reviews() {
             </svg>
             <h1>What People Say About Us</h1>
         </div>
-        
-        <div className="reviews-container">
+        <div className="grid-container">
           {hasError ? (
             <p>Sorry, there was an error loading the reviews.</p>
           ) : (
             <>
-              <iframe
-                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Famy.neng.3%2Fposts%2Fpfbid033SE7AhjJWb9tjNxBNR4xnQZMbMQDM39njEu989StPsFwE7Rv2GicAVLJnRHCTkZ3l&show_text=true&width=350"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                onError={handleIframeError}
-              />
-              <iframe
-                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkaren.wong.376043%2Fposts%2Fpfbid02XoG1piCfySJ6ukrX5Cougkh3k5VFZGafHL3bSdMSwBBAyJ7mT9Z678taUKw6amtkl&show_text=true&width=350"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                onError={handleIframeError}
-              />
+              <div className="grid-item">
+                <iframe 
+                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Famy.neng.3%2Fposts%2Fpfbid033SE7AhjJWb9tjNxBNR4xnQZMbMQDM39njEu989StPsFwE7Rv2GicAVLJnRHCTkZ3l&show_text=true&width=auto" 
+                  onError={handleIframeError}
+                />
+              </div>
+              <div className="grid-item">
+                <iframe 
+                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkaren.wong.376043%2Fposts%2Fpfbid0UFcpuYaK8FUYEuhpgLYG9fmDLWFNbB3XM2jkcgGHWtzNGiRsUjozf98HCErTHvgfl&show_text=true&width=auto" 
+                  onError={handleIframeError} 
+                />
+              </div>
+              <div className="grid-item">
+                <iframe 
+                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjingjie0912%2Fposts%2Fpfbid02h75vTjVkjzg6gBUosscCSgdk8FkWhhuYzNc74JM54n73f8a8jTtgQyZeph4JBvzkl&show_text=true&width=auto" 
+                  onError={handleIframeError}
+                />
+              </div>
             </>
           )}
         </div>
