@@ -3,6 +3,7 @@ import styles from './page.module.css'
 import ImageSlider from '../components/ImageSlider/ImageSlider'
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
+import Reviews from '../components/Reviews/Reviews';
 
 const ItemSpotlight = dynamic(() => import('../components/ItemSpotlight/ItemSpotlight'), {
   ssr: false,
@@ -44,6 +45,7 @@ export default function Home() {
     <main className={styles.main}>
       <ImageSlider/>
       <ItemSpotlight src={imgSource} />
+      <Reviews />
     </main>
   )
 }
