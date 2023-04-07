@@ -1,11 +1,8 @@
-interface Props {
-    src: string;
-  }
-  
-export default function ItemSpotlight({ src }: Props): JSX.Element {
+export default function ItemSpotlight() {
     return (
-      <div className="ItemSpotlight">
-        <img src={src} />
-      </div>
-    );
-  }
+        <div className="item-spotlight">
+            <h2>Remax RCC230 FM Transmitter, Handsfree & Car Charger</h2>
+            <img src="https://imgur.com/J02htBX" alt="Remax RCC230 FM Transmitter, Handsfree & Car Charger"/>
+        </div>
+    )
+}
