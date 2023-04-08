@@ -1,0 +1,121 @@
+.item-spotlight {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: #000;
+  width: 100%;
+}
+
+.item-spotlight > h1 {
+  animation: pulse 1s infinite alternate;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 50px;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
+}
+
+.item-spotlight .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  box-sizing: border-box;
+  width: calc(100% - 50px);
+  margin: auto 25px;
+}
+
+.item-spotlight .grid-item {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.item-spotlight .grid-item h3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-30%);
+  bottom: 40px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 0.5em;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: #fff solid 1px;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe; 
+}
+
+.item-spotlight .grid-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.item-spotlight .grid-container {
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset -2px 0 1.3rem #bc13fe;
+  clip-path: inset(0 0 0 0), outset();
+}
+
+@media (max-width: 1300px) {
+  .item-spotlight > h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1290px) {
+  .item-spotlight .grid-container .grid-item:nth-child(n+4) {
+    display: none;
+   }
+}
+
+@media (max-width: 1610px) {
+  .item-spotlight .grid-container .grid-item:nth-child(n+5) {
+    display: none;
+   }
+}
+
+@keyframes pulse {
+  100% {
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #bc13fe,
+      0 0 80px #bc13fe,
+      0 0 90px #bc13fe,
+      0 0 100px #bc13fe,
+      0 0 150px #bc13fe;
+  
+  }
+  
+  0% {
+    text-shadow:
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px #fff,
+    0 0 10px #bc13fe,
+    0 0 45px #bc13fe,
+    0 0 55px #bc13fe,
+    0 0 70px #bc13fe,
+    0 0 80px #bc13fe;
+  }
+}
