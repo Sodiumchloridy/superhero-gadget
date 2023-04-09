@@ -6,3 +6,21 @@
   padding: 0;
   min-height: 80vh;
 }
+
+.partnership {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: grid;
+  margin-left: 20px;
+  margin-right: 20px;
+  place-items: center;
+  grid-template-columns: repeat(var(--logo-repeat, auto-fill), minmax(225px, 1fr));
+  grid-gap: 10px;
+}
+
+@media (min-width: calc(225px * 4 + 30px)) {
+  .partnership {
+    --logo-repeat: 4;
+  }
+}

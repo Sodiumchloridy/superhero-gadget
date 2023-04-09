@@ -1,6 +1,6 @@
 export default function Membership(){
     return(
-        <main className="membership-benefits">
+        <main className="main">
             <h2>Superhero Gadget Membership Programme</h2>
             <h3>Membership Benefits</h3>
             <p>Join our membership program today to receive exclusive benefits:</p>
