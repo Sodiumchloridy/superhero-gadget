@@ -6,11 +6,12 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    margin-top: 25px;
 }
 
 .reviews h2 {
     font-size: 3rem;
-    margin: 75px 50px 50px 10px;
+    margin: 50px 50px 50px 10px;
 }
 
 .reviews .grid-container {
