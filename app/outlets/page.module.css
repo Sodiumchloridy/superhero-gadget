@@ -6,7 +6,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
     grid-gap: 10px;
     margin: 30px;
 }
@@ -19,10 +19,6 @@
 }
 
 @media  (max-width: 1000px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .img {
         height: 200px;
     }
