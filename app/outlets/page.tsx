@@ -2,7 +2,7 @@ import styles from './page.module.css'
 
 export default function Outlets(){
     return(
-        <div>
+        <div className='main'>
             <h1>Outlets</h1>
             <div className={styles.grid}>
                 <div className={styles.outlet}>
