@@ -90,6 +90,12 @@
    }
 }
 
+@media (max-width: 350px) {
+  .item-spotlight .grid-container .grid-item {
+    transition-delay: 0s;
+   }
+}
+
 /* Animation Delay */
 .item-spotlight .grid-item:nth-child(1) {
   transition-delay: 0.2s;
