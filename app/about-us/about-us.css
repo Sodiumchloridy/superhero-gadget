@@ -1,0 +1,31 @@
+.about-us img {
+    clip-path: polygon(51% 7%, 78% 10%, 82% 50%, 96% 84%, 38% 100%, 1% 49%, 19% 24%);
+    object-fit: cover;
+    object-position: 50% 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-us .drop-shadow-wrapper {
+    filter: drop-shadow(10px 10px 0.5rem #000) drop-shadow(-10px -10px 0.5rem #000) opacity(0.5);
+}
+
+.about-us .flex-wrapper {
+    position: absolute;
+    height: auto;
+    top: 50%;
+    right: 50px;
+    width: 50%;
+    transform: translateY(-50%);
+}
+
+.about-us .section-wrapper {
+    width: 100%;
+    height: max-content;
+}
+
+@media (max-width: 768px) {
+    .about-us .flex-wrapper {
+        font-size: 0.5rem;
+    }
+}

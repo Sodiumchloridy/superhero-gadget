@@ -4,7 +4,6 @@ import ImageSlider from '../components/ImageSlider/ImageSlider'
 import Reviews from '../components/Reviews/Reviews';
 import ItemSpotlight from '../components/ItemSpotlight/ItemSpotlight';
 import { useEffect } from 'react';
-import { title } from 'process';
 
 export default function Home() {
   useEffect(() => {
