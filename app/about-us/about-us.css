@@ -14,18 +14,27 @@
     position: absolute;
     height: auto;
     top: 50%;
-    right: 50px;
+    right: 0px;
     width: 50%;
     transform: translateY(-50%);
 }
 
 .about-us .section-wrapper {
+    position: relative;
     width: 100%;
-    height: max-content;
+    height: auto;
+}
+
+.about-us h2 {
+    margin:20px 
 }
 
 @media (max-width: 768px) {
     .about-us .flex-wrapper {
-        font-size: 0.5rem;
+        position: relative;
+        font-size: 0.75rem;
+        width: 100%;
+        max-width: 100%;
+        height: max-content;
     }
 }
