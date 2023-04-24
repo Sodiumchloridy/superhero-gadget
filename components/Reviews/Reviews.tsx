@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './Reviews.css'
 
 export default function Reviews() {
@@ -9,6 +9,28 @@ export default function Reviews() {
       setHasError(true);
     }
 
+    useEffect(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      });
+  
+      const targets = document.querySelectorAll('.fade-in');
+      targets.forEach((target) => {
+        observer.observe(target);
+      });
+  
+      return () => {
+        targets.forEach((target) => {
+          observer.unobserve(target);
+        });
+      }
+    }, []);
     return (
       <div className="reviews">
         <div className="title-wrapper fade-in">

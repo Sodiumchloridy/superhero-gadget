@@ -1,17 +1,16 @@
 "use client"
-
 import './globals.css'
 import Link from 'next/link'
 import Logo from './Logo.png'
 import Image from 'next/image'
 import { useEffect } from 'react'
+import { PageWrapper } from '@/components/PageWrapper/PageWrapper'
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  
   // Navbar
   useEffect(() => {
     //Navbar Link Active Class Event Listener
@@ -70,7 +69,7 @@ export default function RootLayout({
             </li>
           </ul>
         </div>
-          {children}
+        {children}
         <footer className="footer">
         <h6>Follow Us On</h6>
           <div className='grid-container'>

@@ -1,6 +1,30 @@
+'use client'
 import './ItemSpotlight.css'
+import { useEffect } from 'react'
 
 export default function ItemSpotlight() {
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            } else {
+              entry.target.classList.remove('visible');
+            }
+          });
+        });
+    
+        const targets = document.querySelectorAll('.fade-in');
+        targets.forEach((target) => {
+          observer.observe(target);
+        });
+    
+        return () => {
+          targets.forEach((target) => {
+            observer.unobserve(target);
+          });
+        }
+      }, []);
     return (
         <div className="item-spotlight">
             <h1>Hot Selling Products</h1>
