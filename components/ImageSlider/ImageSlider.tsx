@@ -80,19 +80,19 @@ export default function ImageSlider() {
   return (
     <div className="img-slider">
       <div className="slide active">
-        <img src="/images/1.jpg" alt="" />
+        <img src="/images/1.webp" alt="" />
       </div>
       <div className="slide">
-        <img src="/images/2.jpg" alt="" />
+        <img src="/images/2.webp" alt="" />
       </div>
       <div className="slide">
-        <img src="/images/3.jpg" alt="" />
+        <img src="/images/3.webp" alt="" />
       </div>
       <div className="slide">
-        <img src="/images/4.jpg" alt="" />
+        <img src="/images/4.webp" alt="" />
       </div>
       <div className="slide">
-        <img src="/images/5.jpg" alt="" />
+        <img src="/images/5.webp" alt="" />
       </div>
       <div className="navigation">
         <div className="btn active"></div>
