@@ -1,5 +1,5 @@
 .about-us img {
-    clip-path: polygon(51% 7%, 78% 10%, 82% 50%, 96% 84%, 38% 100%, 1% 49%, 19% 24%);
+    clip-path: polygon(0 24%, 1% 87%, 0 100%, 17% 100%, 84% 100%, 100% 84%, 100% 14%, 100% 0, 89% 0, 18% 0, 0 0);
     object-fit: cover;
     object-position: 50% 50%;
     max-width: 100%;
