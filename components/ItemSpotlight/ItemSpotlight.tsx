@@ -30,23 +30,23 @@ export default function ItemSpotlight() {
             <h1>Hot Selling Products</h1>
             <div className='grid-container'>
                 <div className='grid-item fade-in'>
-                    <img src="https://i.imgur.com/J02htBX.png" alt="Remax RCC230 FM Transmitter, Handsfree & Car Charger" />
+                    <img src="https://i.ibb.co/vXDKrLh/rcc230.webp" alt="Remax RCC230 FM Transmitter, Handsfree & Car Charger" />
                     <h3>Remax RCC230 FM Transmitter, Handsfree & Car Charger</h3>
                 </div>
                 <div className="grid-item fade-in">
-                    <img src="https://i.imgur.com/hfW2fmw.png" alt="Hoco CA55 Magnetic Car Holder" />
+                    <img src="https://i.ibb.co/1Xtsb6b/ca55.webp" alt="Hoco CA55 Magnetic Car Holder" />
                     <h3>Hoco CA55 Magnetic Car Holder</h3>
                 </div>
                 <div className="grid-item fade-in">
-                    <img src="https://i.imgur.com/WPOpS86.png" alt="Mcdodo CA-7410 Auto power off USB cable for Lightning" />
+                    <img src="https://i.ibb.co/zX4yWPx/7410.webp" alt="Mcdodo CA-7410 Auto power off USB cable for Lightning" />
                     <h3>Mcdodo CA-7410 Auto power off USB cable for Lightning</h3>
                 </div>
                 <div className="grid-item fade-in">
-                    <img src="https://i.imgur.com/wkfCyxh.png" alt="Remax RT-W02 Laptop Cooling Stand" />
+                    <img src="https://i.ibb.co/nLBYKgh/rt-w02.webp" alt="Remax RT-W02 Laptop Cooling Stand" />
                     <h3>Remax RT-W02 Laptop Cooling Stand</h3>
                 </div>
                 <div className="grid-item fade-in">
-                    <img src="https://i.imgur.com/oveoc2H.png" alt="URbantin 303B Smart Power Strip" />
+                    <img src="https://i.ibb.co/jb4S2WM/303b.webp" alt="URbantin 303B Smart Power Strip" />
                     <h3>URbantin 303B Smart Power Strip</h3>
                 </div>
             </div>
