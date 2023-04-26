@@ -9,7 +9,7 @@ export default function AboutUs(){
                     <div className="drop-shadow-wrapper">
                         <img src="https://i.ibb.co/vz5WTfs/balkouras-nicos-5yl-Xkp-d-Zng-unsplash.webp" alt="" />
                     </div>
-                    <div className="flex-wrapper">
+                    <div className="text-wrapper">
                         <h1>About Us</h1>
                         <p>
                             Looking for the latest and greatest mobile accessories? Look no further than

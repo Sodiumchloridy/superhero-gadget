@@ -35,7 +35,7 @@ export const Navbar = () => {
     return (
         <div className='navbar'>
           <Link href="/">
-            <Image src='/images/logo.png' alt="Logo" width={350} height={82} unoptimized/>
+            <Image src='/images/Logo.png' alt="Logo" width={350} height={82} unoptimized/>
           </Link>
           <div className="menu-btn">
             <div className="menu-btn_burger"></div>

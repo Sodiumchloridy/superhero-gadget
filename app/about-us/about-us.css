@@ -4,19 +4,30 @@
     object-position: 50% 50%;
     max-width: 100%;
     height: auto;
+    border-radius: 5%;
 }
 
 .about-us .drop-shadow-wrapper {
     filter: drop-shadow(10px 10px 0.5rem #000) drop-shadow(-10px -10px 0.5rem #000) opacity(0.5);
 }
 
-.about-us .flex-wrapper {
+.about-us .text-wrapper {
+    height: 80%;
+    width: 60%;
+    overflow: auto;
+    overflow-x: hidden;
     position: absolute;
-    height: auto;
     top: 50%;
-    right: 0px;
-    width: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-us .text-wrapper h1 {
+    margin: 0px;
+}
+
+.about-us .text-wrapper p {
+    margin: 10px;
 }
 
 .about-us .section-wrapper {
@@ -30,11 +41,11 @@
 }
 
 @media (max-width: 768px) {
-    .about-us .flex-wrapper {
-        position: relative;
+    .about-us .text-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         font-size: 0.75rem;
-        width: 100%;
-        max-width: 100%;
-        height: max-content;
     }
 }
