@@ -1,3 +1,12 @@
+.about-us {
+    overflow: hidden;
+}
+
+.about-us h1 {
+    text-align: center;
+    font-size: 10rem;
+}
+
 .about-us img {
     clip-path: polygon(0 24%, 1% 87%, 0 100%, 17% 100%, 84% 100%, 100% 84%, 100% 14%, 100% 0, 89% 0, 18% 0, 0 0);
     object-fit: cover;
@@ -22,10 +31,6 @@
     transform: translate(-50%, -50%);
 }
 
-.about-us .text-wrapper h1 {
-    margin: 0px;
-}
-
 .about-us .text-wrapper p {
     margin: 10px;
 }
@@ -38,6 +43,10 @@
 
 .about-us h2 {
     margin:20px 
+}
+
+.about-us .motto {
+    text-align: center;
 }
 
 @media (max-width: 768px) {

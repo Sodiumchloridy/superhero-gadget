@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
 :root {
   font-family: 'Poppins', sans-serif;
-  color: #fff;
-  text-align: justify;
 }
 
-html, body {
-  margin: 0px;
-  padding: 0px;
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
+  text-align: justify;
+  color: #fff;
 }
 
 body {
@@ -266,4 +265,9 @@ main {
   .fade-in {
     transition: none;
   }
+}
+
+/* Hacker Text Effect */
+.hacker {
+  font-family: 'Space Mono', monospace;
 }
