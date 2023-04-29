@@ -2,9 +2,17 @@
     overflow: hidden;
 }
 
+.about-us .flex-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
 .about-us h1 {
     text-align: center;
-    font-size: 10rem;
+    font-size: 12vw;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin: 0;
 }
 
 .about-us img {
@@ -32,7 +40,7 @@
 }
 
 .about-us .text-wrapper p {
-    margin: 10px;
+    margin: 5px;
 }
 
 .about-us .section-wrapper {
