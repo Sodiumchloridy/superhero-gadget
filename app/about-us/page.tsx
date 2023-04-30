@@ -29,7 +29,7 @@ export default function AboutUs(){
                     }
 
                     interval_iterations += 1/3;
-                }, 30)
+                }, 40)
               }
             });
           });

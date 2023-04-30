@@ -9,7 +9,7 @@
 
 .about-us h1 {
     text-align: center;
-    font-size: 12vw;
+    font-size: clamp(1rem, 10vw, 10rem);
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     margin: 0;
