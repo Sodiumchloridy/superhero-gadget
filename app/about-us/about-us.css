@@ -16,53 +16,46 @@
 }
 
 .about-us img {
-    clip-path: polygon(0 24%, 1% 87%, 0 100%, 17% 100%, 84% 100%, 100% 84%, 100% 14%, 100% 0, 89% 0, 18% 0, 0 0);
     object-fit: cover;
     object-position: 50% 50%;
-    max-width: 100%;
+    width: 40vw;
     height: auto;
     border-radius: 5%;
+    margin: 10px;
 }
 
 .about-us .drop-shadow-wrapper {
     filter: drop-shadow(10px 10px 0.5rem #000) drop-shadow(-10px -10px 0.5rem #000) opacity(0.5);
 }
 
-.about-us .text-wrapper {
-    height: 80%;
-    width: 60%;
-    overflow: auto;
-    overflow-x: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.about-us .text-wrapper p {
-    margin: 5px;
-}
-
 .about-us .section-wrapper {
+    display: flex;
     position: relative;
     width: 100%;
     height: auto;
 }
 
-.about-us h2 {
-    margin:20px 
+.about-us .section-wrapper p {
+    position: relative;
+    flex-wrap: wrap;
+    margin: 50px;
+    font-size: clamp(1rem, 2vw,1.5rem);
+    max-width: 100%;
+    height: auto;
 }
 
 .about-us .motto {
     text-align: center;
+    margin: 20px;
 }
 
 @media (max-width: 768px) {
-    .about-us .text-wrapper {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 0.75rem;
+    .about-us img {
+        width: 90%;
+        height: auto;
+    }
+    .about-us .section-wrapper {
+        display: block;
+        font-size: 1rem;
     }
 }
