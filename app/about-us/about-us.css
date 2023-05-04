@@ -1,24 +1,42 @@
 .about-us {
     overflow: hidden;
+    margin-left: clamp(10px, 10vw, 10vw);
+    margin-right: clamp(10px, 10vw, 10vw);
 }
 
+/* Slogan */
+.about-us .slogan-text {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Description */
 .about-us .flex-wrapper {
     display: flex;
     align-items: flex-start;
 }
 
-.about-us h1 {
+.about-us .title h1 {
     text-align: center;
-    font-size: clamp(1rem, 10vw, 10rem);
+    font-size: clamp(1rem, 10vh, 10rem);
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    margin: 0;
+    margin: 20px 0 0 0;
+}
+
+.about-us .title .title-underscore {
+    background-color: #7bb1ff;
+    width: 30%;
+    height: 12px;
+    border-top-right-radius: 10px;
+    margin-top: 10px;
+    transform: rotate(0deg);
 }
 
 .about-us img {
     object-fit: cover;
     object-position: 50% 50%;
-    width: 40vw;
+    width: 30vw;
     height: auto;
     border-radius: 5%;
     margin: 10px;
@@ -38,24 +56,28 @@
 .about-us .section-wrapper p {
     position: relative;
     flex-wrap: wrap;
-    margin: 50px;
-    font-size: clamp(1rem, 2vw,1.5rem);
+    margin: 20px;
+    font-size: 1.2rem;
     max-width: 100%;
     height: auto;
 }
 
-.about-us .motto {
-    text-align: center;
-    margin: 20px;
-}
-
 @media (max-width: 768px) {
+    .about-us {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .about-us img {
         width: 90%;
         height: auto;
     }
     .about-us .section-wrapper {
         display: block;
-        font-size: 1rem;
+    }
+
+    .about-us .section-wrapper p {
+        margin: 20px 0 0 0;
+        font-size: 0.75rem;
     }
 }
