@@ -98,21 +98,21 @@
 
 /* Animation Delay */
 .item-spotlight .grid-item:nth-child(1) {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 
 .item-spotlight .grid-item:nth-child(2) {
-  transition-delay: 0.4s;
+  transition-delay: 0.3s;
 }
 
 .item-spotlight .grid-item:nth-child(3) {
-  transition-delay: 0.6s;
+  transition-delay: 0.5s;
 }
 
 .item-spotlight .grid-item:nth-child(4) {
-  transition-delay: 0.8s;
+  transition-delay: 0.7s;
 }
 
 .item-spotlight .grid-item:nth-child(5) {
-  transition-delay: 1s;
+  transition-delay: 0.9s;
 }

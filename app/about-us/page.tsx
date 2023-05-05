@@ -44,12 +44,14 @@ export default function AboutUs(){
         <PageWrapper>
             <main className="about-us">
                 <div className="slogan">
+                    <h3 className='our-mission'>Our Mission</h3>
+                    <div className="underscore"></div>
                     <h2 className='slogan-text'>Low Price, High Value</h2>
                 </div>
                 <div className="flex-wrapper">
                     <div className="title">
                         <h1 data-value="ABOUT US" className='hacker'>ABOUT US</h1>
-                        <div className="title-underscore"></div>
+                        <div className="underscore"></div>
                     </div>
                     <div className="section-wrapper">
                         <p>
