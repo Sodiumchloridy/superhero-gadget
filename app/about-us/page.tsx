@@ -44,38 +44,40 @@ export default function AboutUs(){
         <PageWrapper>
             <main className="about-us">
                 <div className="slogan">
-                    <h3 className='our-mission'>Our Mission</h3>
-                    <div className="underscore"></div>
-                    <h2 className='slogan-text'>Low Price, High Value</h2>
-                </div>
-                <div className="flex-wrapper">
-                    <div className="title">
-                        <h1 data-value="ABOUT US" className='hacker'>ABOUT US</h1>
+                    <div className="slogan-text-wrapper">
+                        <h3 className='our-mission'>Our Mission</h3>
                         <div className="underscore"></div>
+                        <h2 className='slogan-text'>Low Price, High Value</h2>
                     </div>
-                    <div className="section-wrapper">
-                        <p>
-                            Looking for the latest and greatest mobile accessories? Look no further than
-                            Superhero Gadget! We provide the latest and greatest gadgets and accessories to enhance your 
-                            mobile experience. Our mission is to offer high-quality products at an affordable 
-                            price so that everyone can enjoy the latest technology without breaking the bank.
-                            <br></br>
-                            <br></br>
-                            We understand that your mobile device is an integral part of your life, and that's 
-                            why we are committed to providing you with products that not only protect your device, 
-                            but also reflect your unique style. From phone cases to chargers to screen protectors, 
-                            we have everything you need to keep your device looking great and functioning at its best.
-                            <br></br>
-                            <br></br>
-                            We are constantly updating our inventory to ensure that we offer the latest and greatest 
-                            mobile accessories on the market. Whether you're looking for a new phone case to show off
-                            your personality, a durable screen protector to keep your device safe, or a high-speed 
-                            charger to keep you connected, we have you covered.
-                        </p>
-                        <div className="drop-shadow-wrapper">
-                            <img src="https://i.ibb.co/vz5WTfs/balkouras-nicos-5yl-Xkp-d-Zng-unsplash.webp" alt="" />
+                </div>
+                <div className="section-wrapper">
+                    <div className="text-wrapper">
+                        <div className="title">
+                            <h1 data-value="ABOUT US" className='hacker'>ABOUT US</h1>
+                            <div className="underscore"></div>
                         </div>
+                        <p>
+                                Looking for the latest and greatest mobile accessories? Look no further than
+                                Superhero Gadget! We provide the latest and greatest gadgets and accessories to enhance your 
+                                mobile experience. Our mission is to offer high-quality products at an affordable 
+                                price so that everyone can enjoy the latest technology without breaking the bank.
+                                <br></br>
+                                <br></br>
+                                We understand that your mobile device is an integral part of your life, and that's 
+                                why we are committed to providing you with products that not only protect your device, 
+                                but also reflect your unique style. From phone cases to chargers to screen protectors, 
+                                we have everything you need to keep your device looking great and functioning at its best.
+                                <br></br>
+                                <br></br>
+                                We are constantly updating our inventory to ensure that we offer the latest and greatest 
+                                mobile accessories on the market. Whether you're looking for a new phone case to show off
+                                your personality, a durable screen protector to keep your device safe, or a high-speed 
+                                charger to keep you connected, we have you covered.
+                        </p>            
                     </div>
+                    <div className="drop-shadow-wrapper">
+                        <img src="https://i.ibb.co/vz5WTfs/balkouras-nicos-5yl-Xkp-d-Zng-unsplash.webp" alt="" />
+                    </div>        
                 </div>
             </main>
         </PageWrapper>

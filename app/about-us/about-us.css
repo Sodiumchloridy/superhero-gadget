@@ -8,14 +8,24 @@
     top: 0;
     width: 100vw;
     max-width: 100%;
-    height: clamp(400px, 30vh, 30vh);
+    height: clamp(300px, 40vh, 40vh);
     display: block;
     background: url('https://i.ibb.co/Dfm8XW6/hand-painted-watercolor-pastel-sky-background-23-2148902771.webp') no-repeat center center/cover;
 }
+
+.about-us .slogan-text-wrapper {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: clamp(10px, 10vw, 10vw);
+}
+
 .about-us .our-mission {
     display: block;
     color: #000;
-    font-size: 2rem;
+    font-size: clamp(0.5rem, 4vh, 5rem);
+    font-weight: 600;
     margin: 0;
 }
 
@@ -25,29 +35,38 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-size: 5rem;
+    font-size: clamp(1rem, 6vh, 10rem);
+    font-weight: 900;
+    margin: 0;
+    text-align: left;
 }
 
-/* Description */
-.about-us .flex-wrapper {
+/* Main */
+.about-us .section-wrapper {
     display: flex;
-    align-items: flex-start;
+    gap: 50px;
     margin-left: clamp(10px, 10vw, 10vw);
     margin-right: clamp(10px, 10vw, 10vw);
 }
 
+.about-us .text-wrapper {
+    display: block;
+}
+
+.about-us .title {
+    display: block;
+}
+
 .about-us .title h1 {
-    text-align: center;
-    font-size: clamp(1rem, 10vh, 10rem);
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    margin: 20px 0 0 0;
+    text-align: left;
+    font-size: clamp(1rem, 8vw, 10rem);
+    margin: 0;
 }
 
 .about-us .underscore {
     overflow: visible;
     background-color: #7bb1ff;
-    width: 2rem;
+    width: 1.5rem;
     height: 8px;
     border-top-right-radius: 10px;
     margin-top: 5px;
@@ -56,48 +75,24 @@
 .about-us img {
     object-fit: cover;
     object-position: 50% 50%;
-    width: 30vw;
+    width: clamp(10rem, 30vw, 30rem);
     height: auto;
-    border-radius: 5%;
-    margin: 10px;
+    margin: 50px 10px 50px 10px;
 }
 
 .about-us .drop-shadow-wrapper {
     filter: drop-shadow(10px 10px 0.5rem #000) drop-shadow(-10px -10px 0.5rem #000) opacity(0.5);
 }
 
-.about-us .section-wrapper {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.about-us .section-wrapper p {
-    position: relative;
-    flex-wrap: wrap;
-    margin: 20px;
-    font-size: 1.2rem;
-    max-width: 100%;
-    height: auto;
-}
-
 @media (max-width: 768px) {
-    .about-us {
-        margin-left: 20px;
-        margin-right: 20px;
+    .about-us .section-wrapper{
+        margin: 40px;
+        display: block;
+        gap: 10px;
     }
 
     .about-us img {
         width: 90%;
         height: auto;
-    }
-    .about-us .section-wrapper {
-        display: block;
-    }
-
-    .about-us .section-wrapper p {
-        margin: 20px 0 0 0;
-        font-size: 0.75rem;
     }
 }
