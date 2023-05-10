@@ -41,7 +41,7 @@
     text-align: left;
 }
 
-/* Main */
+/* Main Section */
 .about-us .section-wrapper {
     display: flex;
     gap: 50px;
@@ -95,4 +95,37 @@
         width: 90%;
         height: auto;
     }
+}
+
+/* Why Us Section */
+.about-us .why-us {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #000;
+}
+
+.about-us .why-us .title {
+    text-align: center;
+    font-size: clamp(1rem, 5vw, 5rem);
+    margin: 0;
+}
+
+.about-us .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    align-items: center;
+    margin-left: clamp(10px, 10vw, 10vw);
+    margin-right: clamp(10px, 10vw, 10vw);
+}
+
+.about-us .grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us .grid-item svg {
+    width: 6rem;
+    height: auto;
+    margin: 0 auto;
 }
