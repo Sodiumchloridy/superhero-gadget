@@ -102,16 +102,20 @@
     box-sizing: border-box;
     width: 100%;
     background-color: #000;
+    padding-bottom: 50px;
+    border-bottom: red 2px solid;
 }
 
 .about-us .why-us .title {
     text-align: center;
     font-size: clamp(1rem, 5vw, 5rem);
-    margin: 0;
+    padding: 1rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
 }
 
 .about-us .grid-container {
     display: grid;
+    gap: 50px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     align-items: center;
@@ -122,10 +126,30 @@
 .about-us .grid-item {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-us .grid-item svg {
-    width: 6rem;
+    display: block;
+    width: 4rem;
+    aspect-ratio: 1;
     height: auto;
     margin: 0 auto;
+}
+.about-us .grid-item h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about-us .grid-item p {
+    margin: 0;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .about-us .grid-container {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr)
+    }
 }
