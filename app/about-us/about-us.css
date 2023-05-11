@@ -140,6 +140,7 @@
 .about-us .grid-item h2 {
     font-size: 1.5rem;
     font-weight: 600;
+    color: rgb(255, 69, 69);
 }
 
 .about-us .grid-item p {
