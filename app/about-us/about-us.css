@@ -35,10 +35,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-size: clamp(1rem, 6vh, 10rem);
+    font-size: clamp(1rem, 7vh, 10rem);
     font-weight: 900;
     margin: 0;
     text-align: left;
+    animation: infinite gradient-shift 60s linear;
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 250% -250%;
+    }
+
+    100% {
+        background-position: -250% 250%;
+    }
 }
 
 /* Main Section */
@@ -97,25 +108,37 @@
     }
 }
 
+/* Image Banner */
+.about-us .image-banner {
+    background-image: url('/images/store-front.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100vw;
+    max-width: 100%;
+    height: 30vw;
+    border-top: red 2px solid;
+    border-bottom: red 2px solid;
+}
+
 /* Why Us Section */
 .about-us .why-us {
     box-sizing: border-box;
     width: 100%;
     background-color: #000;
     padding-bottom: 50px;
-    border-bottom: red 2px solid;
 }
 
 .about-us .why-us .title {
     text-align: center;
     font-size: clamp(1rem, 5vw, 5rem);
-    padding: 1rem 0 1rem 0;
-    margin: 1rem 0 1rem 0;
+    font-weight: 600;
+    padding: 3rem 0 3rem 0;
 }
 
 .about-us .grid-container {
     display: grid;
-    gap: 50px;
+    gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     align-items: center;
@@ -126,8 +149,12 @@
 .about-us .grid-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 100%;
+    align-items: flex-start;
     justify-content: center;
+    border: rgb(255, 69, 69) 2px solid;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .about-us .grid-item svg {
@@ -152,5 +179,9 @@
     .about-us .grid-container {
         grid-template-columns: none;
         grid-template-rows: repeat(3, 1fr)
+    }
+
+    .about-us .grid-item {
+        height: auto;
     }
 }

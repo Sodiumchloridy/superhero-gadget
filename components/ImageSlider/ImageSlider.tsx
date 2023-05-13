@@ -1,14 +1,14 @@
 'use client'
 import './ImageSlider.css'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function ImageSlider() {
+  const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {
     const slides = document.querySelectorAll('.slide');
     const btns = document.querySelectorAll('.btn');
     const btnLeft = document.querySelector('.btn-left');
     const btnRight = document.querySelector('.btn-right');
-    let currentSlide = 0;
     let slideInterval: NodeJS.Timeout;
   
     const showSlide = (slideIndex:number) => {
@@ -24,30 +24,34 @@ export default function ImageSlider() {
     };
   
     const nextSlide = () => {
-      currentSlide++;
-      if (currentSlide >= slides.length) {
-        currentSlide = 0;
-      }
-      showSlide(currentSlide);
+      setCurrentSlide((currentSlide) => {
+        let nextSlideIndex = currentSlide + 1;
+        if (nextSlideIndex >= slides.length) {
+          nextSlideIndex = 0;
+        }
+        showSlide(nextSlideIndex);
+        return nextSlideIndex;
+      });
     };
-  
+    
     const prevSlide = () => {
-      currentSlide--;
-      if (currentSlide < 0) {
-        currentSlide = slides.length - 1;
-      }
-      showSlide(currentSlide);
-    };
+      setCurrentSlide((currentSlide) => {
+        let prevSlideIndex = currentSlide - 1;
+        if (prevSlideIndex < 0) {
+          prevSlideIndex = slides.length - 1;
+        }
+        showSlide(prevSlideIndex);
+        return prevSlideIndex;
+      });
+    };    
   
     // Handle button clicks
     btnLeft?.addEventListener('click', () => {
-      if (!slideInterval) {prevSlide(); return}
-      else {clearInterval(slideInterval); prevSlide(); startSlideShow();}
+      if (slideInterval) {prevSlide(); return}
     });
   
     btnRight?.addEventListener('click', () => {
-      if (!slideInterval) {nextSlide(); return}
-      else {clearInterval(slideInterval); nextSlide(); startSlideShow();}
+      if (slideInterval) {nextSlide(); return}
     });
   
     // Autoplay slides
@@ -59,22 +63,7 @@ export default function ImageSlider() {
     };
   
     startSlideShow();
-  
-    const sliderContainer = document.querySelector('.img-slider');
-    sliderContainer?.addEventListener('mouseover', (event) => {
-        // Pause the slide show
-        if (!slideInterval) return;
-        clearInterval(slideInterval);
-    });
-    
-    sliderContainer?.addEventListener('mouseout', (event) => {
-      // Start the slide show
-      const target = event.target as HTMLElement;
-      if (target.tagName === 'IMG') {
-        if (slideInterval) return;
-        startSlideShow();
-      }
-    });
+    return () => clearInterval(slideInterval);
   }, []);  
 
   return (
