@@ -72,9 +72,7 @@ export default function AboutUs(){
                                 charger to keep you connected, we have you covered.
                         </p>            
                     </div>
-                    <div className="drop-shadow-wrapper">
-                        <img src="https://i.ibb.co/vz5WTfs/balkouras-nicos-5yl-Xkp-d-Zng-unsplash.webp" alt="" />
-                    </div>        
+                    <img src="/images/about-us.webp" alt="" />
                 </div>
                 <motion.div ref={ref} style={{backgroundPositionY:y}} className='image-banner'>
                 </motion.div>
