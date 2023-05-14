@@ -1,0 +1,43 @@
+.contact-us {
+    display: block;
+}
+
+.contact-us .map{
+    max-width: 100%;
+    width: 100vw;
+    height: 40vh;
+    border: 0;
+}
+
+.contact-us .section-wrapper{
+    margin-left: clamp(10px, 10vw, 10vw);
+    margin-right: clamp(10px, 10vw, 10vw);
+    margin-bottom: 50px;
+}
+
+.contact-us svg{
+    flex-shrink: 0;
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+.contact-us .info-wrapper{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    word-break: break-word;
+    margin: 20px 0;
+}
+
+.contact-us .info-wrapper p{
+    font-size: 1rem;
+    text-align: justify;
+    width: auto;
+    margin: 0;
+}
+
+@media (max-width: 768px){
+    .contact-us svg{
+        width: 20px;
+    }
+}

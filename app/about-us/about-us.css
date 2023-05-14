@@ -10,7 +10,7 @@
     max-width: 100%;
     height: clamp(300px, 40vh, 40vh);
     display: block;
-    background: url('https://i.ibb.co/Dfm8XW6/hand-painted-watercolor-pastel-sky-background-23-2148902771.webp') no-repeat center center/cover;
+    background: url('/images/watercolor-backdrop.webp') no-repeat center center/cover;
 }
 
 .about-us .slogan-text-wrapper {
