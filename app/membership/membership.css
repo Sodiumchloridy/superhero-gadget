@@ -1,0 +1,70 @@
+.membership {
+    display: block;
+}
+
+.membership .title {
+    display: grid;
+    background-image: url('/images/watercolor-backdrop.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 40vh;
+    align-items: center;
+}
+
+.membership .title-inner-wrapper {
+    margin: 50px;
+}
+
+@media (max-width: 768px) {
+    .membership .title-inner-wrapper {
+        margin: 20px;
+    }
+}
+
+.membership .title h1 {
+    font-size: clamp(2rem, 4vw, 4rem);
+    margin: 0;
+    color: #fff;
+    word-break: break-word;
+}
+
+.membership .underscore {
+    overflow: visible;
+    background-color: #7bb1ff;
+    width: 2rem;
+    height: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0px;
+}
+
+/* Main Section */
+
+.membership .description {
+    width: 100vw;
+    max-width: 100%;
+    background-color: #fff;
+    color: #000;
+    padding: 50px 0px;
+}
+
+@media (max-width: 768px) {
+    .membership .description {
+        padding: 20px 0px;
+    }
+}
+
+.membership .description p {
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
+    line-height: 1.5;
+    margin: 0 clamp(10px, 10vw, 10vw);
+}
+
+.membership .benefit {
+    width: 100vw;
+    max-width: 100%;
+    background-color: #fffffff5;
+    color: #000;
+    padding: 50px 0px;
+}
