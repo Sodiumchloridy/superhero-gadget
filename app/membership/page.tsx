@@ -35,7 +35,7 @@ export default function Membership(){
                             you to indulge in future shopping sprees or enjoy irresistible savings.
                         </p>
                     </div>
-                    <img/>
+                    <div id="benefit-1" className="benefit-image"></div>
                 </div>
             </main>
         </PageWrapper>

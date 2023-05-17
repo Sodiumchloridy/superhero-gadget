@@ -62,9 +62,30 @@
 }
 
 .membership .benefit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100vw;
     max-width: 100%;
     background-color: #fffffff5;
     color: #000;
-    padding: 50px 0px;
+    padding: 0px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .membership .benefit {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.membership .benefit .benefit-image {
+    width: auto;
+    max-width: 50%;
+    aspect-ratio: 1/1;
+    margin: 0;
+    background-image: url('/images/shopping-bags-3000x2000.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
