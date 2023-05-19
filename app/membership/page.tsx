@@ -7,7 +7,7 @@ export default function Membership(){
             <main className="membership">
                 <div className="title">
                     <div className="title-inner-wrapper">
-                        <h1>Superhero Gadget Membership Programme</h1>
+                        <h1>Superhero Gadget Membership</h1>
                         <div className="underscore"></div>
                     </div>
                 </div>
