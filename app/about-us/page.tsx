@@ -44,7 +44,7 @@ export default function AboutUs(){
                     <div className="slogan-text-wrapper">
                         <h3 className='our-mission'>Our Mission</h3>
                         <div className="underscore"></div>
-                        <h2 className='slogan-text'>Low Price, High Value</h2>
+                        <h2 className='slogan-text'>Next-Level Mobile Accessories</h2>
                     </div>
                 </div>
                 <div className="section-wrapper">
@@ -101,6 +101,11 @@ export default function AboutUs(){
                             <p>Get exceptional service when you shop with us.</p>
                         </div>
                     </div>
+                </div>
+                <div className="grid">
+                    <div id='item-1'></div>
+                    <div id='item-2'></div>
+                    <div id='item-3'></div>
                 </div>
             </main>
         </PageWrapper>

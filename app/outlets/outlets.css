@@ -6,7 +6,7 @@
 /* Title */
 .outlets .title {
     display: grid;
-    background-image: url('/images/watercolor-backdrop.webp');
+    background-image: url('/images/starry-sky-backdrop.webp');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;

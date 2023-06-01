@@ -4,7 +4,7 @@
 
 .membership .title {
     display: grid;
-    background-image: url('/images/watercolor-backdrop.webp');
+    background-image: url('/images/starry-sky-backdrop.webp');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -133,4 +133,20 @@
 
 #benefit-4-image {
     background-image: url('/images/gift-3000x2000.webp');
+}
+
+/*---------------------*/
+/* Terms and Conditions*/
+/*---------------------*/
+
+.membership .terms {
+    padding: 0 15px 15px 15px;
+}
+
+.membership .terms a{
+    color: red;
+}
+
+.membership .terms a:hover{
+    color: white;
 }
