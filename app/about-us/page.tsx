@@ -102,10 +102,10 @@ export default function AboutUs(){
                         </div>
                     </div>
                 </div>
-                <div className="grid">
-                    <div id='item-1'></div>
-                    <div id='item-2'></div>
-                    <div id='item-3'></div>
+                <div className="picture-grid">
+                    <div id='picture-1' className='picture'></div>
+                    <div id='picture-2' className='picture'></div>
+                    <div id='picture-3' className='picture'></div>
                 </div>
             </main>
         </PageWrapper>
